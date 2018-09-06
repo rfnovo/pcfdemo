@@ -1,0 +1,10 @@
+applications:
+- name: attendee
+  path: attendee-1.0.jar
+#  random-route: true
+  host: attendee-rfn
+  memory: 768M
+  instances: 1
+  buildpack: java_buildpack
+  services:
+  - attendee-mysql

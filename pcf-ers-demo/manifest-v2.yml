@@ -1,0 +1,11 @@
+---
+applications:
+- name: pcfdemojava-v2
+  memory: 1GB
+  instances: 1
+  random-route: true
+  path: pcf-ers-demo-2.jar
+#  buildpack: java_buildpack
+  services: []
+  env:
+    SPRING_PROFILES_ACTIVE: cloud

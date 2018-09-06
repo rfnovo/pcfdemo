@@ -1,0 +1,12 @@
+---
+applications:
+- name: pcfdemojava
+  memory: 768M
+  instances: 2
+# random-route: true
+  path: pcf-ers-demo-1.jar
+#  buildpack: java_buildpack
+#  services:
+#   - mysql01
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
